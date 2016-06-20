@@ -1,4 +1,4 @@
-package strategy.old;
+package strategy.firstapproach;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -45,21 +45,9 @@ public class CalcApp {
 		System.out.print("Escribe la operación (+, -, *, /): ");
 		String operator = readLine();
 		
-		Double result = 0.0;
-		if("+".equals(operator)) {
-			result = new Double(number1 + number2);
-		} else if("-".equals(operator)) {
-			result = new Double(number1 - number2);
-		} else if("*".equals(operator)) {
-			result = new Double(number1 * number2);
-		} else if("/".equals(operator)) {
-			result = new Double(number1 / number2);
-		} else {
-			result = new Double(0);
-		}
-		
+		Calculator calculator = new Calculator(number1, number2, operator);
 		DecimalFormat df = new DecimalFormat("0.#");
-		System.out.println("El resultado es: " + df.format(result));
+		System.out.println("El resultado es: " + df.format(calculator.result()));
 	}
 	
 }

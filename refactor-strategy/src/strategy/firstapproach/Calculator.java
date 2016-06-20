@@ -1,4 +1,4 @@
-package strategy.old;
+package strategy.firstapproach;
 
 public class Calculator {
 
