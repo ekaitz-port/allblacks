@@ -45,9 +45,8 @@ public class RemoteApp {
 			
 			if(tvRemote.containsKey(operation)) {
 				tvRemote.get(operation).execute();
+				tvRemote.get("showStatus").execute();
 			}
-			
-			tvRemote.get("showStatus").execute();
 		}
 		
 	}
