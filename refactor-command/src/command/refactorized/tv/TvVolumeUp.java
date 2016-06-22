@@ -1,12 +1,12 @@
-package command.refactorized.Tv;
+package command.refactorized.tv;
 
 import command.refactorized.Command;
 
-public class TvShowStatus implements Command {
+public class TvVolumeUp implements Command {
 
 	private Tv tv;
 	
-	public TvShowStatus(Tv tv) {
+	public TvVolumeUp(Tv tv) {
 		super();
 		
 		this.tv = tv;
@@ -14,7 +14,7 @@ public class TvShowStatus implements Command {
 
 	@Override
 	public void execute() {
-		this.tv.printState();
+		this.tv.volumeUp();
 	}
 	
 }

@@ -5,12 +5,12 @@ import java.io.InputStreamReader;
 import java.util.HashMap;
 import java.util.Map;
 
-import command.refactorized.Tv.Tv;
-import command.refactorized.Tv.TvProgramDown;
-import command.refactorized.Tv.TvProgramUp;
-import command.refactorized.Tv.TvShowStatus;
-import command.refactorized.Tv.TvVolumeDown;
-import command.refactorized.Tv.TvVolumeUp;
+import command.refactorized.tv.Tv;
+import command.refactorized.tv.TvProgramDown;
+import command.refactorized.tv.TvProgramUp;
+import command.refactorized.tv.TvShowStatus;
+import command.refactorized.tv.TvVolumeDown;
+import command.refactorized.tv.TvVolumeUp;
 
 public class RemoteApp {
 

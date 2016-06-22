@@ -1,4 +1,4 @@
-package command.refactorized.Tv;
+package command.refactorized.tv;
 
 public class Tv {
 
